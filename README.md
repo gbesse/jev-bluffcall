@@ -33,6 +33,10 @@ For every submitted player, one `choice` question asks which of exactly three st
 
 This is a toy, not deception detection. A guess says nothing about a person's honesty. The local server has no TLS or authentication; use only on a trusted network. Statements may be personal, and Jev can be influenced by wording or injected instructions. Do not submit secrets. The timer value is exposed for hosts; automatic countdown UI is not part of 0.1.0.
 
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
+
 ## Validation
 
 `npm run check`, `npm run typecheck`, `npm test`, and `npm run demo` run in CI on Node 22 and 24. Live smoke is opt-in and capped at two paid calls.
